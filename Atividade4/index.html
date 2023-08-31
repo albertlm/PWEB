@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Usando Forms e CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <form action="" id="formulario">
+            <section>
+                <fieldset>
+                    <legend>Informações do aluno</legend>
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome" type="text" required size="50" maxlength="50" autofocus>
+                    <br>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" id="email" name="email" required>
+                    <br>
+                    <br>
+                    <label for="turma">Turma: </label>
+                    <input type="radio" id="turma1" name="turma" required checked>
+                    <label for="turma1">Turma 1</label>
+                    <input type="radio" id="turma2" name="turma" required>
+                    <label for="turma2">Turma 2</label>
+                    <br>
+                    <br>
+                    <label for="disciplinas">Disciplinas: </label>
+                    <input type="checkbox" name="disciplinas" id="pweb" value="Pweb">
+                    <label for="pweb">Programação WEB</label>
+                    <input type="checkbox" name="disciplinas" id="lbd" value="Lbd">
+                    <label for="lbd">Laboratório de Banco de Dados</label>
+                    <input type="checkbox" name="disciplinas" id="es2" value="Es2">
+                    <label for="es2">Engenharia de Software 2</label>
+                    <input type="checkbox" name="disciplinas" id="plin" value="Plin">
+                    <label for="plin">Programação Linear</label>
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <button type="reset">Limpar</button>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Deixe aqui alguma informação que julgue importante</legend>
+                    <textarea name="mensagem" id="mensagem" cols="50" rows="5"></textarea>
+                    <br>
+                    <br>
+                    <label for="cidade">Cidade</label>
+                    <select name="cidade" id="cidade">
+                        <option value="">Selecione</option>
+                        <option value="Itapetininga">Itapetininga</option>
+                        <option value="Itu">Itu</option>
+                        <option value="Piedade">Piedade</option>
+                        <option value="Sorocaba">Sorocaba</option>
+                        <option value="Votorantim">Votorantim</option>
+                    </select>
+                    <button type="button">Cancelar</button>
+                </fieldset>
+            </section>
+        </form>
+    </main>
+    <footer class="rodape">
+        <p>Página criada na aula de PWEB - Direitos reservados - 2023</p>
+    </footer>
+</body>
+</html>
