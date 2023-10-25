@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação - Janela</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div id="texto">
+        <br>
+        <br>
+        <h1>Interaja com a janela</h1>
+        <h4>Passe o mouse na janela fechada para abri-lá</h4>
+        <h4>Tire o mouse de cima da janela para fecha-lá</h4>
+        <h4>Clique na janela para quebra-lá</h4> 
+        <br>
+        <h1 id="estado">Janela Fechada</h1>
+    </div>
+    
+    <div id="janela" onmouseover="abrirJanela()" onmouseout="fecharJanela()" onclick="quebrarJanela()"></div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

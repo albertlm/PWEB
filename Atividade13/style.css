@@ -1,0 +1,24 @@
+body{
+  background-color: rgb(222, 222, 222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+#texto {
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+#janela {
+  width: 800px;
+  height: 850px;
+  background-image: url('./img/closed.png');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
