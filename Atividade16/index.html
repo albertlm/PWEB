@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seleção de Curso</title>
+</head>
+<body>
+    <h1>Selecione um curso:</h1>
+    <select id="cursos">
+        <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+        <option value="eletronica">Eletrônica Automotiva</option>
+        <option value="fabricacao">Fabricação Mecânica</option>
+        <option value="ead">Gestão Empresarial - EAD</option>
+        <option value="qualidade">Gestão da Qualidade</option>
+        <option value="logistica">Logística</option>
+        <option value="manufatura">Manufatura Avançada</option>
+        <option value="metalurgicos">Processos Metalúrgicos</option>
+        <option value="polimeros">Polímeros</option>
+        <option value="mecanicos">Projetos Mecânicos</option>
+        <option value="biomedicos">Sistemas Biomédicos</option>
+    </select>
+
+    <script>
+        const selectCurso = document.getElementById('cursos');
+
+        selectCurso.onchange = function() {
+            const selectedCurso = selectCurso.value;
+            const confirmacao = confirm(`Deseja abrir o curso de ${selectCurso.options[selectCurso.selectedIndex].text}?`);
+
+            if (confirmacao) {
+                const width = 600;
+                const height = 300;
+                const left = (window.innerWidth - width) / 2;
+                const top = (window.innerHeight - height) / 2;
+
+                const url = `curso_${selectedCurso}.html`; // Substitua pelo nome do arquivo HTML do curso
+
+                const cursoWindow = window.open(url, 'Curso', `width=${width}, height=${height}, left=${left}, top=${top}`);
+                
+                // Você pode adicionar mais informações sobre o curso na página HTML do curso.
+            }
+        };
+    </script>
+</body>
+</html>
